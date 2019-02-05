@@ -1,0 +1,15 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- dependency used for XLSX file format -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17</version>
+</dependency>
+
+<!-- dependency used for XLS older file format
+     (added for information) -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency>
