@@ -46,16 +46,21 @@ public class GD77_CSV_Parser
 	                {
 
 	                    Cell cell = cellIterator.next();
-
-	                    switch (cell.getCellType())
+	                    
+	                   // cell.getCellTypeEnum();
+	                   // switch (cell.getCellType())
+	                    switch (cell.getCellTypeEnum())
 	                    {
-	                    case Cell.CELL_TYPE_STRING:
+	                   // case Cell.CELL_TYPE_STRING:
+	                    case STRING:
 	                        System.out.print(cell.getStringCellValue() + "\t");
 	                        break;
-	                    case Cell.CELL_TYPE_NUMERIC:
+	                    //case Cell.CELL_TYPE_NUMERIC:
+	                    case NUMERIC:
 	                        System.out.print(cell.getNumericCellValue() + "\t");
 	                        break;
-	                    case Cell.CELL_TYPE_BOOLEAN:
+	                   // case Cell.CELL_TYPE_BOOLEAN:
+	                    case BOOLEAN:
 	                        System.out.print(cell.getBooleanCellValue() + "\t");
 	                        break;
 	                    default:
