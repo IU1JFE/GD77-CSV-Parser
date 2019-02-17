@@ -36,10 +36,10 @@ public class GD77_CSV_Parser
 			 	//File excel = new File(".\\Test-in.xlsx");
 	            //File csv = new File(".\\Test-out.csv");
 			 
-			 	File excel = new File(arguments[1]);
-	           // File csv = new File(arguments[2]);
+			 	File excel = new File(arguments[0]);
+	           // File csv = new File(arguments[1]);
 	            
-	            FileWriter os = new FileWriter("arguments[2]");
+	            FileWriter os = new FileWriter("arguments[1]");
 	            os.write("TEST");
 	            os.close();
 	            
@@ -130,7 +130,11 @@ public class GD77_CSV_Parser
 		 {
 			 Test(args);
 		 }
-
+		 else if((args[0]== "-h")||(args[0]== "--h")||(args[0]== "-help")||(args[0]== "--help"))
+		 {
+			 System.out.println("\n\n- - - program usage :\t- - -\n");
+			 System.out.println("\n\njava GD77_CSV_Parser path_input_file.xls path_output_file.csv\n");
+		 }
 		 else 
 		 {
 			 System.out.println("\n\n- - - RUN TEST... - - -\n");
@@ -139,9 +143,10 @@ public class GD77_CSV_Parser
 			 String workingDir = System.getProperty("user.dir");
 			System.out.println("Run Test on working dir : "+workingDir+"...");
 			String[] TestArgs = new String[5];;
-			TestArgs[0]="0";
-			TestArgs[1]=workingDir+"\\src\\main\\java\\"+"Test-in.xlsx";//input
-			TestArgs[2]=workingDir+"\\src\\main\\java\\"+"Test-out.csv";//output
+			
+			TestArgs[0]=workingDir+"\\src\\main\\java\\"+"Test-in.xlsx";//input
+			TestArgs[1]=workingDir+"\\src\\main\\java\\"+"Test-out.csv";//output
+			TestArgs[2]="0";
 			Test(TestArgs);
 			
 			System.out.println("\n\n- - - END TEST - - -\n");
