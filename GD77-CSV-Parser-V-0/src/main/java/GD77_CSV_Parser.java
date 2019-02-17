@@ -130,8 +130,10 @@ public class GD77_CSV_Parser
 		 {
 			 Test(args);
 		 }
+
 		 else 
 		 {
+			 System.out.println("TEST...");
 			// IWorkspace workspace = ResourcesPlugin.getWorkspace(); 
 			//String path= ResourcesPlugin.getWorkspace().getRoot().getLocation().toString();
 			 String workingDir = System.getProperty("user.dir");
