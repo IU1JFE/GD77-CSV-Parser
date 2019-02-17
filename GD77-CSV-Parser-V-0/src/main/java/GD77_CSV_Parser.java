@@ -133,7 +133,7 @@ public class GD77_CSV_Parser
 
 		 else 
 		 {
-			 System.out.println("TEST...");
+			 System.out.println("\n\n- - - RUN TEST... - - -\n");
 			// IWorkspace workspace = ResourcesPlugin.getWorkspace(); 
 			//String path= ResourcesPlugin.getWorkspace().getRoot().getLocation().toString();
 			 String workingDir = System.getProperty("user.dir");
@@ -143,6 +143,8 @@ public class GD77_CSV_Parser
 			TestArgs[1]=workingDir+"\\src\\main\\java\\"+"Test-in.xlsx";//input
 			TestArgs[2]=workingDir+"\\src\\main\\java\\"+"Test-out.csv";//output
 			Test(TestArgs);
+			
+			System.out.println("\n\n- - - END TEST - - -\n");
 		 }
 		 
 	}
